@@ -4,10 +4,6 @@ import re
 
 def extract_jira_number(git_branch, jira_prefix):
     git_branch = git_branch.strip()
-
-    # Figure out which branch we're on
-    # git_branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip().decode("utf-8")
-
     print('On branch: \'{0}\''.format(git_branch))
 
     if git_branch.find(jira_prefix + '-') != -1:
