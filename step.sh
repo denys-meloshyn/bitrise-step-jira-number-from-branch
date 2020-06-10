@@ -2,8 +2,7 @@
 set -ex
 
 THIS_SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-
-python "${THIS_SCRIPT_DIR}/jira_number_presenter.py ${BITRISE_GIT_BRANCH} ${bitrise_jira_number_prefix} ${bitrise_jira_number_should_fail}"
+python "${THIS_SCRIPT_DIR}/jira_number_presenter.py" ${BITRISE_GIT_BRANCH} ${bitrise_jira_number_prefix} ${bitrise_jira_number_should_fail}
 
 #echo "This is the value specified for the input 'example_step_input': ${example_step_input}"
 
