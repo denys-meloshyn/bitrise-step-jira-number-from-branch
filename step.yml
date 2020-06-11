@@ -46,6 +46,13 @@ toolkit:
     entry_file: step.sh
 
 inputs:
+  - bitrise_jira_branch_name: "$BITRISE_GIT_BRANCH"
+    opts:
+      title: "Branch name"
+      summary: Branch name from which extract JIRA issue number
+      description: |
+        Branch name from which extract JIRA issue number. For example: $BITRISE_GIT_BRANCH, $BITRISEIO_GIT_BRANCH_DEST
+        is_required: true
   - bitrise_jira_number_prefix: ""
     opts:
       title: "JIRA prefix, fx 'PROJECT-#'"
