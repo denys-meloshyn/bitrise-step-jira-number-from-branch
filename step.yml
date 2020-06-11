@@ -55,10 +55,10 @@ inputs:
         is_required: true
   - bitrise_jira_number_prefix: ""
     opts:
-      title: "JIRA prefix, fx 'PROJECT-#'"
-      summary: JIRA prefix, fx 'PROJECT-#'
+      title: "JIRA prefix"
+      summary: JIRA project prefix
       description: |
-        JIRA prefix, fx `PROJECT-#`
+        JIRA issue has next format PROJECT-XXX where ``PROJECT`` is prefix and ``XXX`` is issue number
       is_required: true
   - bitrise_jira_number_should_fail: "false"
     opts:
