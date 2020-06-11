@@ -66,7 +66,7 @@ inputs:
       summary: Should step fail in case of missed JIRA number
       description: |
         In case value option selected as ``true`` step will return error, otherwise ``JIRA_ISSUE_NUMBER_FROM_BRANCH``
-        will contain empty string.
+        ``JIRA_ISSUE_NUMBER_FROM_BRANCH`` will contain empty string.
       is_expand: true
       is_required: true
       value_options: ["true", "false"]
