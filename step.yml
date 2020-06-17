@@ -8,7 +8,7 @@
 # - Bitrise CLI guides: http://devcenter.bitrise.io/bitrise-cli/
 
 title: |-
-  jira-number-from-branch
+  JIRA issue number
 summary: |
   Extract JIRA issue number from Git branch
 description: |
